@@ -52,11 +52,15 @@ const Form = () => {
                 id="name"
                 name="name"
                 type="text"
-                value={formik.values.name}
-                // onChange will change state and value
-                onChange={formik.handleChange}
-                // add onBlur to handle action with input
-                onBlur={formik.handleBlur}
+                // value={formik.values.name}
+                // // onChange will change state and value
+                // onChange={formik.handleChange}
+                // // add onBlur to handle action with input
+                // onBlur={formik.handleBlur}
+
+
+                // or we can just get all props
+                {...formik.getFieldProps('name')}
             />
             {/* add touched to see if there were some actions with input */}
             {formik.errors.name && formik.touched.name ? <div className={'error'}> {formik.errors.name}</div> : null}
