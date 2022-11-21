@@ -1,6 +1,6 @@
 # Form educational project
 
-## Achivements ✅
+## Achivements ⭐️
  - create react-app
  - create form
  - create form validation via yup
